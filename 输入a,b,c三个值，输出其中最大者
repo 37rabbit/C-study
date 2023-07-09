@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+
+int main(void)
+{
+	int max(int x, int y, int z);
+	int a, b, c, d;
+	scanf("%d %d %d", &a, &b, &c);
+	d = max(a, b, c);
+	printf("max=%d\n", d);
+	return 0;
+}
+int max(int x, int y, int z)
+{
+	int i,max;
+	if (x > y)
+	{
+		i = x;
+	}
+	else
+	{
+		i = y;
+	}
+	if (i > z)
+	{
+		max = i;
+	}
+	else
+	{
+		max = z;
+	}
+	return max;
+}
